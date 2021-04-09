@@ -1,0 +1,644 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 980px;
+  line-height: 1.7;
+  letter-spacing: 0.3em;
+  color: #444444;
+  font-family: "YuMincho", /* Mac用 */ "Yu Mincho", /* Windows用 */ serif;
+  text-decoration: none;
+  list-style: none;
+  margin: 0 auto;
+  background-color: rgb(248, 240, 229);
+}
+
+#wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+h2 {
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 2px dotted #dcd8d7;
+  margin-top: 110px;
+  color: #444444;
+}
+
+.top-logo {
+  max-width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+
+.logo {
+  max-width: 18vw;
+  margin: 0 30px;
+}
+
+.top-nav {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  border-bottom: dotted 2px #dcd8d7;
+  padding-top: 30px;
+}
+
+.top-nav li a {
+  position: relative;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 20px 0;
+  color: #444444;
+  text-shadow: 4px 4px #e4bfad;
+}
+
+.top-nav li a:hover {
+  color: #e4bfad;
+  text-shadow: 4px 4px #999;
+}
+
+.slider {
+  position: relative;
+  z-index: 1;
+}
+
+.slider img {
+  width: 100%;
+  height: 60vw;
+  object-fit: cover;
+}
+
+.btn {
+  margin-top: 30px;
+  position: absolute;
+  right: 50px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #333333;
+  background-color: #d2e3dc;
+  border: 4px solid #e4bfad;
+  border-radius: 13px;
+}
+
+.btn:hover {
+  background-color: #dcd8d7;
+  transition: all 0.5s;
+}
+
+.concept {
+  max-width: 100%;
+  height: 500px;
+  margin: 30px auto;
+  background-image: url("leandra-rieger-iMK_1babVUg-unsplash\ \(1\).jpg");
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 20px;
+  border-radius: 15px;
+}
+
+.concept p {
+  width: 70%;
+  float: left;
+  margin: 50px 0px 50px 30px;
+  background-color: #ecd6d0;
+  border: 4px solid #e4bfad;
+  border-radius: 16px;
+  font-size: 18px;
+  padding: 50px;
+  margin-bottom: 50px;
+}
+
+.style {
+  max-width: 100%;
+}
+
+.style-photo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.style-img {
+  width: 230px;
+  height: 230px;
+  margin: 30px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 5px;
+  box-shadow: 10px 10px #ecd6d0;
+}
+
+.style-img:hover {
+  transform: scale(1.2, 1.2);
+  transition: 1.5s all;
+}
+
+.staff-container {
+  width: min(980px, 90%);
+  margin: 0 auto;
+  display: flex;
+  background-color: #dcd8d7;
+  border: 4px solid #ecd6d0;
+  border-radius: 15px;
+  padding: 40px;
+}
+
+.staff-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.staff-name h3 {
+  font-size: 22px;
+  text-align: left;
+  margin-left: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+}
+
+.staff-name p {
+  font-size: 14px;
+  max-width: 380px;
+  text-align: left;
+  margin-left: 80px;
+}
+
+.staff-photo {
+  background-image: url("pius-martin-uRHO082vO70-unsplash\ \(1\).jpg");
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  border: 4px solid #e4bfad;
+  margin-left: 20px;
+}
+
+.menu-box {
+  width: min(980px, 90%);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  width: 400px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: #ecd6d0;
+  border: 4px solid #e4bfad;
+  border-radius: 15px;
+  box-sizing: border-box;
+  box-shadow: 13px 13px #dcd8d7;
+}
+
+.menu-item h3 {
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+}
+
+.menu-item dl {
+  font-size: 16px;
+  margin-top: 23px;
+  padding-bottom: 25px;
+  border-bottom: 1px dotted #999;
+}
+
+.menu-item dt {
+  float: left;
+  line-height: 1.4em;
+  display: block;
+}
+
+.menu-item dd {
+  float: right;
+  display: block;
+}
+
+.menu-item p {
+  max-width: 350px;
+  font-size: 14px;
+  text-align: left;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.access {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.map {
+  max-width: 980px;
+  height: 380px;
+  margin: 0 auto;
+}
+
+iframe {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+footer {
+  width: 100%;
+  padding: 50px 50px 5px;
+  background-image: url("annie-spratt-hHiin0FcZO0-unsplash\ \(1\).jpg");
+  background-size: cover;
+  background-position: bottom;
+  margin-top: 30px;
+  border-top: 10px solid #e4bfad;
+  border-bottom: 10px solid #e4bfad;
+}
+
+.footer-logo {
+  width: 120px;
+  height: 40px;
+  margin-bottom: 60px;
+}
+
+footer p {
+  font-size: 12px;
+}
+
+.copy-right {
+  text-align: center;
+  color: #fff;
+  font-size: 10px;
+  margin-top: 40px;
+}
+
+/*767px*/
+@media (min-width: 767px) {
+  #nav-drawer {
+    display: none;
+  }
+
+  .fixed-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .top-nav {
+    display: none;
+  }
+
+  .top-logo {
+    padding-bottom: 30px;
+  }
+
+  #nav-drawer {
+    position: relative;
+    margin-left: 18px;
+    margin-top: -60px;
+  }
+
+  .nav-unshown {
+    display: none;
+  }
+
+  .fixed-btn {
+    position: fixed;
+    z-index: 10;
+    letter-spacing: 0.3em;
+    bottom: 85%;
+    right: 20px;
+    width: 40%;
+    padding: 15px 0 15px 0;
+    border: 4px solid #e4bfad;
+    background: #d2e3dc;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 15px;
+  }
+
+  .fixed-btn a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #333333;
+  }
+
+  .concept p {
+    background-color: #ecd6d0;
+    border-radius: 13px;
+    font-size: 15px;
+    padding: 40px;
+  }
+
+  #nav-open {
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    vertical-align: middle;
+  }
+
+  /*ハンバーガーアイコン*/
+  #nav-open span,
+  #nav-open span:before,
+  #nav-open span:after {
+    position: absolute;
+    height: 2px; /*線の太さ*/
+    width: 28px; /*長さ*/
+    border-radius: 4px;
+    background: #3b4043; /*線の色*/
+    display: block;
+    content: "";
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  #nav-open span:before {
+    bottom: -8px;
+  }
+
+  #nav-open span:after {
+    bottom: -16px;
+  }
+
+  /*グレーのカバー*/
+  #nav-close {
+    display: none; /*はじめは隠しておく*/
+    position: fixed;
+    z-index: 99;
+    top: 0; /*全体に広がるように*/
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #999;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+  }
+
+  /*中身*/
+  #nav-content {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999; /*最前面に*/
+    width: 50%; /*右側に隙間を作る（閉じるカバーを表示）*/
+    max-width: 330px; /*最大幅（調整してください）*/
+    height: 30%;
+    border-radius: 13px;
+    background: rgb(248, 240, 229); /*背景色*/
+    transition: 0.3s ease-in-out; /*滑らかに表示*/
+    -webkit-transform: translateX(-105%);
+    transform: translateX(-105%); /*左に隠しておく*/
+  }
+
+  /*チェックが入ったら表示*/
+  #nav-input:checked ~ #nav-close {
+    display: block; /*カバーを表示*/
+    opacity: 0.5;
+  }
+
+  #nav-input:checked ~ #nav-content {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%); /*中身を表示（右へスライド）*/
+    box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
+    z-index: 9998;
+  }
+
+  /*ハンバーガーメニュー*/
+  .hamburger-top {
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    /*padding-top: 20px;*/
+  }
+
+  .hamburger-top .cancel {
+    display: inline-block;
+    padding: 10px 3px;
+  }
+
+  .cancel {
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    top: 33px;
+    right: 20px;
+    width: 5px;
+    height: 30px;
+    background: #dcd8d7;
+    transform: rotate(45deg);
+    z-index: 99;
+  }
+
+  .cancel:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -13px;
+    width: 31px;
+    height: 5px;
+    margin-top: -3px;
+    background: #dcd8d7;
+  }
+
+  .top-info {
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
+
+  .style-img {
+    max-width: 180px;
+    max-height: 180px;
+  }
+
+  .staff-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .staff-photo {
+    width: 170px;
+    height: 170px;
+    margin: 20px auto;
+  }
+
+  .staff-name h3 {
+    font-size: 18px;
+    margin: 20px auto;
+  }
+
+  .staff-name p {
+    width: 500px;
+    font-size: 14px;
+    margin: auto;
+  }
+
+  .menu-item p {
+    width: 350px;
+    font-size: 14px;
+    text-align: left;
+    padding-top: 40px;
+  }
+
+  .menu-container {
+    background-color: rgb(248, 240, 229);
+    padding: 20px 10px;
+  }
+
+  .menu-container li {
+    float: none;
+    font-size: 13px;
+    padding: 10px 15px;
+    list-style: none;
+    text-align: left;
+    border-bottom: dotted 1px #dcd8d7;
+  }
+
+  .menu-container li:last-child {
+    border: none;
+  }
+
+  .menu-container li a {
+    text-decoration: none;
+    color: #444444;
+  }
+
+  .menu-container li :hover {
+    color: #e4bfad;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .form {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    letter-spacing: 0.1em;
+  }
+
+  #nav-content {
+    height: 40%;
+  }
+
+  .fixed-btn {
+    position: fixed;
+    z-index: 10;
+    letter-spacing: 0.2em;
+    bottom: 80%;
+    width: 45%;
+    font-size: 16px;
+  }
+
+  h2 {
+    margin-top: 60px;
+    font-size: 18px;
+    font-weight: 200;
+  }
+
+  .slider img {
+    width: 100%;
+    height: 80vw;
+    object-fit: cover;
+  }
+
+  .logo {
+    max-width: 30vw;
+    margin: 10px 30px;
+  }
+
+  .concept {
+    height: 80vw;
+  }
+
+  .concept p {
+    width: 70%;
+    margin: 15px 20px 50px;
+    background-color: #ecd6d0;
+    border-radius: 13px;
+    font-size: 10px;
+    padding: 20px;
+  }
+
+  .style {
+    padding-top: 10px;
+  }
+
+  .style-photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .style-img {
+    max-width: 110px;
+    max-height: 110px;
+  }
+
+  .staff-photo {
+    width: 130px;
+    height: 130px;
+  }
+
+  .staff-name p {
+    width: 300px;
+    font-size: 14px;
+    margin: auto;
+    padding-right: 20px;
+  }
+
+  .menu-item h3 {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+  }
+
+  .menu-item dl {
+    font-size: 12px;
+    margin-top: 23px;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #999;
+  }
+
+  .menu-item dt {
+    padding-bottom: 10px;
+  }
+
+  .menu-item p {
+    max-width: 250px;
+    font-size: 12px;
+    text-align: left;
+    margin: auto;
+    padding-top: 15px;
+  }
+
+  footer p {
+    font-size: 10px;
+  }
+}
